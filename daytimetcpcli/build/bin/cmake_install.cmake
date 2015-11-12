@@ -1,4 +1,4 @@
-# Install script for directory: /home/gw/net/daytimetcpcli/src
+# Install script for directory: /home/gw/unixnet/daytimetcpcli/src
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

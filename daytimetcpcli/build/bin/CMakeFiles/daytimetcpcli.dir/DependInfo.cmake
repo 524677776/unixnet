@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
-  "/home/gw/net/daytimetcpcli/src/daytimetcpcli.c" "/home/gw/net/daytimetcpcli/build/bin/CMakeFiles/daytimetcpcli.dir/daytimetcpcli.c.o"
+  "/home/gw/unixnet/daytimetcpcli/src/daytimetcpcli.c" "/home/gw/unixnet/daytimetcpcli/build/bin/CMakeFiles/daytimetcpcli.dir/daytimetcpcli.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
 

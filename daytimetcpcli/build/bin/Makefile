@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gw/net/daytimetcpcli
+CMAKE_SOURCE_DIR = /home/gw/unixnet/daytimetcpcli
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gw/net/daytimetcpcli/build
+CMAKE_BINARY_DIR = /home/gw/unixnet/daytimetcpcli/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,14 +69,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/gw/net/daytimetcpcli/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/gw/net/daytimetcpcli/build/CMakeFiles /home/gw/net/daytimetcpcli/build/bin/CMakeFiles/progress.marks
-	cd /home/gw/net/daytimetcpcli/build && $(MAKE) -f CMakeFiles/Makefile2 bin/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gw/net/daytimetcpcli/build/CMakeFiles 0
+	cd /home/gw/unixnet/daytimetcpcli/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/gw/unixnet/daytimetcpcli/build/CMakeFiles /home/gw/unixnet/daytimetcpcli/build/bin/CMakeFiles/progress.marks
+	cd /home/gw/unixnet/daytimetcpcli/build && $(MAKE) -f CMakeFiles/Makefile2 bin/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gw/unixnet/daytimetcpcli/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/gw/net/daytimetcpcli/build && $(MAKE) -f CMakeFiles/Makefile2 bin/clean
+	cd /home/gw/unixnet/daytimetcpcli/build && $(MAKE) -f CMakeFiles/Makefile2 bin/clean
 .PHONY : clean
 
 # The main clean target
@@ -85,22 +85,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/gw/net/daytimetcpcli/build && $(MAKE) -f CMakeFiles/Makefile2 bin/preinstall
+	cd /home/gw/unixnet/daytimetcpcli/build && $(MAKE) -f CMakeFiles/Makefile2 bin/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/gw/net/daytimetcpcli/build && $(MAKE) -f CMakeFiles/Makefile2 bin/preinstall
+	cd /home/gw/unixnet/daytimetcpcli/build && $(MAKE) -f CMakeFiles/Makefile2 bin/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/gw/net/daytimetcpcli/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/gw/unixnet/daytimetcpcli/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 bin/CMakeFiles/daytimetcpcli.dir/rule:
-	cd /home/gw/net/daytimetcpcli/build && $(MAKE) -f CMakeFiles/Makefile2 bin/CMakeFiles/daytimetcpcli.dir/rule
+	cd /home/gw/unixnet/daytimetcpcli/build && $(MAKE) -f CMakeFiles/Makefile2 bin/CMakeFiles/daytimetcpcli.dir/rule
 .PHONY : bin/CMakeFiles/daytimetcpcli.dir/rule
 
 # Convenience name for target.
@@ -109,7 +109,7 @@ daytimetcpcli: bin/CMakeFiles/daytimetcpcli.dir/rule
 
 # fast build rule for target.
 daytimetcpcli/fast:
-	cd /home/gw/net/daytimetcpcli/build && $(MAKE) -f bin/CMakeFiles/daytimetcpcli.dir/build.make bin/CMakeFiles/daytimetcpcli.dir/build
+	cd /home/gw/unixnet/daytimetcpcli/build && $(MAKE) -f bin/CMakeFiles/daytimetcpcli.dir/build.make bin/CMakeFiles/daytimetcpcli.dir/build
 .PHONY : daytimetcpcli/fast
 
 daytimetcpcli.o: daytimetcpcli.c.o
@@ -117,7 +117,7 @@ daytimetcpcli.o: daytimetcpcli.c.o
 
 # target to build an object file
 daytimetcpcli.c.o:
-	cd /home/gw/net/daytimetcpcli/build && $(MAKE) -f bin/CMakeFiles/daytimetcpcli.dir/build.make bin/CMakeFiles/daytimetcpcli.dir/daytimetcpcli.c.o
+	cd /home/gw/unixnet/daytimetcpcli/build && $(MAKE) -f bin/CMakeFiles/daytimetcpcli.dir/build.make bin/CMakeFiles/daytimetcpcli.dir/daytimetcpcli.c.o
 .PHONY : daytimetcpcli.c.o
 
 daytimetcpcli.i: daytimetcpcli.c.i
@@ -125,7 +125,7 @@ daytimetcpcli.i: daytimetcpcli.c.i
 
 # target to preprocess a source file
 daytimetcpcli.c.i:
-	cd /home/gw/net/daytimetcpcli/build && $(MAKE) -f bin/CMakeFiles/daytimetcpcli.dir/build.make bin/CMakeFiles/daytimetcpcli.dir/daytimetcpcli.c.i
+	cd /home/gw/unixnet/daytimetcpcli/build && $(MAKE) -f bin/CMakeFiles/daytimetcpcli.dir/build.make bin/CMakeFiles/daytimetcpcli.dir/daytimetcpcli.c.i
 .PHONY : daytimetcpcli.c.i
 
 daytimetcpcli.s: daytimetcpcli.c.s
@@ -133,7 +133,7 @@ daytimetcpcli.s: daytimetcpcli.c.s
 
 # target to generate assembly for a file
 daytimetcpcli.c.s:
-	cd /home/gw/net/daytimetcpcli/build && $(MAKE) -f bin/CMakeFiles/daytimetcpcli.dir/build.make bin/CMakeFiles/daytimetcpcli.dir/daytimetcpcli.c.s
+	cd /home/gw/unixnet/daytimetcpcli/build && $(MAKE) -f bin/CMakeFiles/daytimetcpcli.dir/build.make bin/CMakeFiles/daytimetcpcli.dir/daytimetcpcli.c.s
 .PHONY : daytimetcpcli.c.s
 
 # Help Target
@@ -159,6 +159,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/gw/net/daytimetcpcli/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/gw/unixnet/daytimetcpcli/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

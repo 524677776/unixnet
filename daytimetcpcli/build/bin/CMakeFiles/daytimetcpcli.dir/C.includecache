@@ -12,7 +12,7 @@ netinet/in.h
 sys/socket.h
 -
 
-/home/gw/net/daytimetcpcli/src/daytimetcpcli.c
+/home/gw/unixnet/daytimetcpcli/src/daytimetcpcli.c
 unp.h
 -
 

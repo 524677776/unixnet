@@ -47,10 +47,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gw/net/daytimetcpcli
+CMAKE_SOURCE_DIR = /home/gw/unixnet/daytimetcpcli
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gw/net/daytimetcpcli/build
+CMAKE_BINARY_DIR = /home/gw/unixnet/daytimetcpcli/build
 
 #=============================================================================
 # Directory level rules for directory bin
@@ -74,7 +74,7 @@ bin/preinstall:
 bin/CMakeFiles/daytimetcpcli.dir/all:
 	$(MAKE) -f bin/CMakeFiles/daytimetcpcli.dir/build.make bin/CMakeFiles/daytimetcpcli.dir/depend
 	$(MAKE) -f bin/CMakeFiles/daytimetcpcli.dir/build.make bin/CMakeFiles/daytimetcpcli.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/gw/net/daytimetcpcli/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/gw/unixnet/daytimetcpcli/build/CMakeFiles  1
 	@echo "Built target daytimetcpcli"
 .PHONY : bin/CMakeFiles/daytimetcpcli.dir/all
 
@@ -84,9 +84,9 @@ all: bin/CMakeFiles/daytimetcpcli.dir/all
 
 # Build rule for subdir invocation for target.
 bin/CMakeFiles/daytimetcpcli.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gw/net/daytimetcpcli/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gw/unixnet/daytimetcpcli/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 bin/CMakeFiles/daytimetcpcli.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gw/net/daytimetcpcli/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gw/unixnet/daytimetcpcli/build/CMakeFiles 0
 .PHONY : bin/CMakeFiles/daytimetcpcli.dir/rule
 
 # Convenience name for target.
