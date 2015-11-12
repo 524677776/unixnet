@@ -1,0 +1,1 @@
+ADD_EXECUTABLE(daytimetcpcli daytimetcpcli.c)
