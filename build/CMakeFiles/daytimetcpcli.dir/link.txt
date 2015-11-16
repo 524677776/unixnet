@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/daytimetcpcli.dir/daytimetcp/daytimetcpcli.c.o  -o daytimetcpcli -rdynamic libliberror.so -Wl,-rpath,/home/gw/Documents/unixnet/build 
