@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gw/unixnet/lib/error.c
+error.h
+/home/gw/unixnet/lib/error.h
+stdarg.h
+-
+syslog.h
+-
+
+/home/gw/unixnet/lib/error.h
+unp.h
+/home/gw/unixnet/lib/unp.h
+
+/home/gw/unixnet/lib/unp.h
+netinet/in.h
+-
+sys/socket.h
+-
+strings.h
+-
+string.h
+-
+stdlib.h
+-
+errno.h
+-
+stdio.h
+-
+

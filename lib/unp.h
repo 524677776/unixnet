@@ -5,8 +5,14 @@
 #include <sys/socket.h> // socket() connect() bind() listen()
 						// read() write() etc.
 
+#include <strings.h>   // for bzero
+#include <string.h>    // for strlen()
+#include <stdlib.h>    // for exit
+#include <errno.h>     // for errno
+#include <stdio.h>     // for snprintf()
 
-#define MAXLINE  100
+
+#define MAXLINE 100
 
 
 
