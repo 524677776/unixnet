@@ -1,12 +1,5 @@
 #include "error.h"
 
-#include <stdarg.h>  // 
-#include <syslog.h>  // for syslog()
-
-int daemon_proc; // set nonzero by daemon_init()
-
-static void err_doit(int, int, const char*, va_list);
-
 void err_ret(const char *fmt, ...)
 {
 	va_list ap;

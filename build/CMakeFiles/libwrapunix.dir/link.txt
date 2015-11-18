@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC   -shared -Wl,-soname,liblibwrapunix.so -o liblibwrapunix.so CMakeFiles/libwrapunix.dir/lib/wrapunix.c.o libliberror.so -Wl,-rpath,/home/gw/Documents/unixnet/build 
