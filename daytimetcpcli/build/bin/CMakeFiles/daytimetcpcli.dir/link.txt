@@ -1,1 +1,0 @@
-/usr/bin/cc      CMakeFiles/daytimetcpcli.dir/daytimetcpcli.c.o  -o daytimetcpcli -rdynamic 

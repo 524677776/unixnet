@@ -1,1 +1,0 @@
-/usr/bin/cc  -fPIC    -shared -Wl,-soname,liberror.so -o liberror.so CMakeFiles/error.dir/error.c.o 
