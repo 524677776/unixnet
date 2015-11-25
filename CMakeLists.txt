@@ -2,16 +2,22 @@ project(unixnet)
 cmake_minimum_required(VERSION 2.8)
 
 include_directories(lib)
-include_directories(daytimetcp)
 
-add_library(liberror SHARED "lib/error.h" "lib/error.c")
-add_library(libwrapsock SHARED "lib/wrapsock.h" "lib/wrapsock.c")
-add_library(libwrapunix SHARED "lib/wrapunix.h" "lib/wrapunix.c")
-target_link_libraries(libwrapsock liberror)
-target_link_libraries(libwrapunix liberror)
+include (${CMAKE_ROOT}/Modules/CheckFunctionExists.cmake)
+CHECK_FUNCTION_EXISTS(epoll_wait HAVE_EPOLL_WAIT)
 
-add_executable(daytimetcpcli "daytimetcp/daytimetcpcli.c")
-target_link_libraries(daytimetcpcli liberror)
+configure_file(
+	"${PROJECT_SOURCE_DIR}/config.h.in"
+	"${PROJECT_BINARY_DIR}/config.h"
+	)
 
-add_executable(daytimetcpsrv "daytimetcp/daytimetcpsrv.c")
-target_link_libraries(daytimetcpsrv liberror libwrapsock libwrapunix)
+set(LIBSRC 
+	"lib/error.c" 
+	"lib/wrapsock.c" 
+	"lib/wrapunix.c"
+	)
+
+add_executable(daytimetcpcli "daytimetcp/daytimetcpcli.c" ${LIBSRC})
+add_executable(daytimetcpsrv "daytimetcp/daytimetcpsrv.c" ${LIBSRC})
+add_executable(byteorder "byteorder/byteorder.c")
+add_executable(tcpserv01 "tcpcliserv/tcpserv01.c")

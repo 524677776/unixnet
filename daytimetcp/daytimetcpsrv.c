@@ -5,10 +5,7 @@
 * @Last Modified time: 2015-11-14 11:54:51
 */
 
-#include <unp.h>
-#include <error.h>
-#include <wrapsock.h>
-#include <wrapunix.h>
+#include "unp.h"
 #include <time.h>
 
 int main(int argc, char **argv)

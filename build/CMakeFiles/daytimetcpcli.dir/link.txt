@@ -1,1 +1,1 @@
-/usr/bin/cc     CMakeFiles/daytimetcpcli.dir/daytimetcp/daytimetcpcli.c.o  -o daytimetcpcli -rdynamic libliberror.so -Wl,-rpath,/home/gw/Documents/unixnet/build 
+/usr/bin/cc      CMakeFiles/daytimetcpcli.dir/daytimetcp/daytimetcpcli.c.o CMakeFiles/daytimetcpcli.dir/lib/error.c.o CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.o CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.o  -o daytimetcpcli -rdynamic 

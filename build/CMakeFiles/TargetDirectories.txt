@@ -1,5 +1,4 @@
-/home/gw/Documents/unixnet/build/CMakeFiles/liberror.dir
-/home/gw/Documents/unixnet/build/CMakeFiles/libwrapsock.dir
-/home/gw/Documents/unixnet/build/CMakeFiles/daytimetcpcli.dir
-/home/gw/Documents/unixnet/build/CMakeFiles/libwrapunix.dir
-/home/gw/Documents/unixnet/build/CMakeFiles/daytimetcpsrv.dir
+/home/gw/unixnet/build/CMakeFiles/byteorder.dir
+/home/gw/unixnet/build/CMakeFiles/daytimetcpcli.dir
+/home/gw/unixnet/build/CMakeFiles/daytimetcpsrv.dir
+/home/gw/unixnet/build/CMakeFiles/tcpserv01.dir

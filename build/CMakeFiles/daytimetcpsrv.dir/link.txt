@@ -1,1 +1,1 @@
-/usr/bin/cc     CMakeFiles/daytimetcpsrv.dir/daytimetcp/daytimetcpsrv.c.o  -o daytimetcpsrv -rdynamic liblibwrapsock.so liblibwrapunix.so libliberror.so -Wl,-rpath,/home/gw/Documents/unixnet/build 
+/usr/bin/cc      CMakeFiles/daytimetcpsrv.dir/daytimetcp/daytimetcpsrv.c.o CMakeFiles/daytimetcpsrv.dir/lib/error.c.o CMakeFiles/daytimetcpsrv.dir/lib/wrapsock.c.o CMakeFiles/daytimetcpsrv.dir/lib/wrapunix.c.o  -o daytimetcpsrv -rdynamic 
