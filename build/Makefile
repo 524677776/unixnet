@@ -138,6 +138,19 @@ daytimetcpsrv/fast:
 .PHONY : daytimetcpsrv/fast
 
 #=============================================================================
+# Target rules for targets named tcpcli01
+
+# Build rule for target.
+tcpcli01: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcpcli01
+.PHONY : tcpcli01
+
+# fast build rule for target.
+tcpcli01/fast:
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/build
+.PHONY : tcpcli01/fast
+
+#=============================================================================
 # Target rules for targets named tcpserv01
 
 # Build rule for target.
@@ -229,6 +242,8 @@ lib/error.o: lib/error.c.o
 lib/error.c.o:
 	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/error.c.o
 	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/error.c.o
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/lib/error.c.o
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/lib/error.c.o
 .PHONY : lib/error.c.o
 
 lib/error.i: lib/error.c.i
@@ -238,6 +253,8 @@ lib/error.i: lib/error.c.i
 lib/error.c.i:
 	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/error.c.i
 	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/error.c.i
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/lib/error.c.i
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/lib/error.c.i
 .PHONY : lib/error.c.i
 
 lib/error.s: lib/error.c.s
@@ -247,7 +264,75 @@ lib/error.s: lib/error.c.s
 lib/error.c.s:
 	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/error.c.s
 	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/error.c.s
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/lib/error.c.s
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/lib/error.c.s
 .PHONY : lib/error.c.s
+
+lib/str_cli.o: lib/str_cli.c.o
+.PHONY : lib/str_cli.o
+
+# target to build an object file
+lib/str_cli.c.o:
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/str_cli.c.o
+	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.o
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/lib/str_cli.c.o
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/lib/str_cli.c.o
+.PHONY : lib/str_cli.c.o
+
+lib/str_cli.i: lib/str_cli.c.i
+.PHONY : lib/str_cli.i
+
+# target to preprocess a source file
+lib/str_cli.c.i:
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/str_cli.c.i
+	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.i
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/lib/str_cli.c.i
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/lib/str_cli.c.i
+.PHONY : lib/str_cli.c.i
+
+lib/str_cli.s: lib/str_cli.c.s
+.PHONY : lib/str_cli.s
+
+# target to generate assembly for a file
+lib/str_cli.c.s:
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/str_cli.c.s
+	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.s
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/lib/str_cli.c.s
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/lib/str_cli.c.s
+.PHONY : lib/str_cli.c.s
+
+lib/str_echo.o: lib/str_echo.c.o
+.PHONY : lib/str_echo.o
+
+# target to build an object file
+lib/str_echo.c.o:
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/str_echo.c.o
+	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.o
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/lib/str_echo.c.o
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/lib/str_echo.c.o
+.PHONY : lib/str_echo.c.o
+
+lib/str_echo.i: lib/str_echo.c.i
+.PHONY : lib/str_echo.i
+
+# target to preprocess a source file
+lib/str_echo.c.i:
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/str_echo.c.i
+	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.i
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/lib/str_echo.c.i
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/lib/str_echo.c.i
+.PHONY : lib/str_echo.c.i
+
+lib/str_echo.s: lib/str_echo.c.s
+.PHONY : lib/str_echo.s
+
+# target to generate assembly for a file
+lib/str_echo.c.s:
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/str_echo.c.s
+	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.s
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/lib/str_echo.c.s
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/lib/str_echo.c.s
+.PHONY : lib/str_echo.c.s
 
 lib/wrapsock.o: lib/wrapsock.c.o
 .PHONY : lib/wrapsock.o
@@ -256,6 +341,8 @@ lib/wrapsock.o: lib/wrapsock.c.o
 lib/wrapsock.c.o:
 	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.o
 	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/wrapsock.c.o
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/lib/wrapsock.c.o
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/lib/wrapsock.c.o
 .PHONY : lib/wrapsock.c.o
 
 lib/wrapsock.i: lib/wrapsock.c.i
@@ -265,6 +352,8 @@ lib/wrapsock.i: lib/wrapsock.c.i
 lib/wrapsock.c.i:
 	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.i
 	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/wrapsock.c.i
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/lib/wrapsock.c.i
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/lib/wrapsock.c.i
 .PHONY : lib/wrapsock.c.i
 
 lib/wrapsock.s: lib/wrapsock.c.s
@@ -274,6 +363,8 @@ lib/wrapsock.s: lib/wrapsock.c.s
 lib/wrapsock.c.s:
 	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.s
 	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/wrapsock.c.s
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/lib/wrapsock.c.s
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/lib/wrapsock.c.s
 .PHONY : lib/wrapsock.c.s
 
 lib/wrapunix.o: lib/wrapunix.c.o
@@ -283,6 +374,8 @@ lib/wrapunix.o: lib/wrapunix.c.o
 lib/wrapunix.c.o:
 	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.o
 	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/wrapunix.c.o
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/lib/wrapunix.c.o
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/lib/wrapunix.c.o
 .PHONY : lib/wrapunix.c.o
 
 lib/wrapunix.i: lib/wrapunix.c.i
@@ -292,6 +385,8 @@ lib/wrapunix.i: lib/wrapunix.c.i
 lib/wrapunix.c.i:
 	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.i
 	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/wrapunix.c.i
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/lib/wrapunix.c.i
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/lib/wrapunix.c.i
 .PHONY : lib/wrapunix.c.i
 
 lib/wrapunix.s: lib/wrapunix.c.s
@@ -301,7 +396,33 @@ lib/wrapunix.s: lib/wrapunix.c.s
 lib/wrapunix.c.s:
 	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.s
 	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/wrapunix.c.s
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/lib/wrapunix.c.s
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/lib/wrapunix.c.s
 .PHONY : lib/wrapunix.c.s
+
+tcpcliserv/tcpcli01.o: tcpcliserv/tcpcli01.c.o
+.PHONY : tcpcliserv/tcpcli01.o
+
+# target to build an object file
+tcpcliserv/tcpcli01.c.o:
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/tcpcliserv/tcpcli01.c.o
+.PHONY : tcpcliserv/tcpcli01.c.o
+
+tcpcliserv/tcpcli01.i: tcpcliserv/tcpcli01.c.i
+.PHONY : tcpcliserv/tcpcli01.i
+
+# target to preprocess a source file
+tcpcliserv/tcpcli01.c.i:
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/tcpcliserv/tcpcli01.c.i
+.PHONY : tcpcliserv/tcpcli01.c.i
+
+tcpcliserv/tcpcli01.s: tcpcliserv/tcpcli01.c.s
+.PHONY : tcpcliserv/tcpcli01.s
+
+# target to generate assembly for a file
+tcpcliserv/tcpcli01.c.s:
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/tcpcliserv/tcpcli01.c.s
+.PHONY : tcpcliserv/tcpcli01.c.s
 
 tcpcliserv/tcpserv01.o: tcpcliserv/tcpserv01.c.o
 .PHONY : tcpcliserv/tcpserv01.o
@@ -338,6 +459,7 @@ help:
 	@echo "... daytimetcpsrv"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... tcpcli01"
 	@echo "... tcpserv01"
 	@echo "... byteorder/byteorder.o"
 	@echo "... byteorder/byteorder.i"
@@ -351,12 +473,21 @@ help:
 	@echo "... lib/error.o"
 	@echo "... lib/error.i"
 	@echo "... lib/error.s"
+	@echo "... lib/str_cli.o"
+	@echo "... lib/str_cli.i"
+	@echo "... lib/str_cli.s"
+	@echo "... lib/str_echo.o"
+	@echo "... lib/str_echo.i"
+	@echo "... lib/str_echo.s"
 	@echo "... lib/wrapsock.o"
 	@echo "... lib/wrapsock.i"
 	@echo "... lib/wrapsock.s"
 	@echo "... lib/wrapunix.o"
 	@echo "... lib/wrapunix.i"
 	@echo "... lib/wrapunix.s"
+	@echo "... tcpcliserv/tcpcli01.o"
+	@echo "... tcpcliserv/tcpcli01.i"
+	@echo "... tcpcliserv/tcpcli01.s"
 	@echo "... tcpcliserv/tcpserv01.o"
 	@echo "... tcpcliserv/tcpserv01.i"
 	@echo "... tcpcliserv/tcpserv01.s"

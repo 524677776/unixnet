@@ -6,6 +6,8 @@ SET(CMAKE_DEPENDS_LANGUAGES
 SET(CMAKE_DEPENDS_CHECK_C
   "/home/gw/unixnet/daytimetcp/daytimetcpsrv.c" "/home/gw/unixnet/build/CMakeFiles/daytimetcpsrv.dir/daytimetcp/daytimetcpsrv.c.o"
   "/home/gw/unixnet/lib/error.c" "/home/gw/unixnet/build/CMakeFiles/daytimetcpsrv.dir/lib/error.c.o"
+  "/home/gw/unixnet/lib/str_cli.c" "/home/gw/unixnet/build/CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.o"
+  "/home/gw/unixnet/lib/str_echo.c" "/home/gw/unixnet/build/CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.o"
   "/home/gw/unixnet/lib/wrapsock.c" "/home/gw/unixnet/build/CMakeFiles/daytimetcpsrv.dir/lib/wrapsock.c.o"
   "/home/gw/unixnet/lib/wrapunix.c" "/home/gw/unixnet/build/CMakeFiles/daytimetcpsrv.dir/lib/wrapunix.c.o"
   )

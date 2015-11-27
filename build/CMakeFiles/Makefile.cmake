@@ -71,5 +71,6 @@ SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/byteorder.dir/DependInfo.cmake"
   "CMakeFiles/daytimetcpcli.dir/DependInfo.cmake"
   "CMakeFiles/daytimetcpsrv.dir/DependInfo.cmake"
+  "CMakeFiles/tcpcli01.dir/DependInfo.cmake"
   "CMakeFiles/tcpserv01.dir/DependInfo.cmake"
   )

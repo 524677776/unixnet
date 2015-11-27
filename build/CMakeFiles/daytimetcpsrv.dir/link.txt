@@ -1,1 +1,1 @@
-/usr/bin/cc      CMakeFiles/daytimetcpsrv.dir/daytimetcp/daytimetcpsrv.c.o CMakeFiles/daytimetcpsrv.dir/lib/error.c.o CMakeFiles/daytimetcpsrv.dir/lib/wrapsock.c.o CMakeFiles/daytimetcpsrv.dir/lib/wrapunix.c.o  -o daytimetcpsrv -rdynamic 
+/usr/bin/cc      CMakeFiles/daytimetcpsrv.dir/daytimetcp/daytimetcpsrv.c.o CMakeFiles/daytimetcpsrv.dir/lib/error.c.o CMakeFiles/daytimetcpsrv.dir/lib/wrapsock.c.o CMakeFiles/daytimetcpsrv.dir/lib/wrapunix.c.o CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.o CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.o  -o daytimetcpsrv -rdynamic 
