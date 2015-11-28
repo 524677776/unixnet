@@ -141,12 +141,60 @@ CMakeFiles/daytimetcpsrv.dir/lib/wrapunix.c.o.provides: CMakeFiles/daytimetcpsrv
 
 CMakeFiles/daytimetcpsrv.dir/lib/wrapunix.c.o.provides.build: CMakeFiles/daytimetcpsrv.dir/lib/wrapunix.c.o
 
+CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.o: CMakeFiles/daytimetcpsrv.dir/flags.make
+CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.o: ../lib/str_cli.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/gw/Documents/unixnet/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.o   -c /home/gw/Documents/unixnet/lib/str_cli.c
+
+CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/gw/Documents/unixnet/lib/str_cli.c > CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.i
+
+CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/gw/Documents/unixnet/lib/str_cli.c -o CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.s
+
+CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.o.requires:
+.PHONY : CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.o.requires
+
+CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.o.provides: CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.o.requires
+	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.o.provides.build
+.PHONY : CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.o.provides
+
+CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.o.provides.build: CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.o
+
+CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.o: CMakeFiles/daytimetcpsrv.dir/flags.make
+CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.o: ../lib/str_echo.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/gw/Documents/unixnet/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.o   -c /home/gw/Documents/unixnet/lib/str_echo.c
+
+CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/gw/Documents/unixnet/lib/str_echo.c > CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.i
+
+CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/gw/Documents/unixnet/lib/str_echo.c -o CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.s
+
+CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.o.requires:
+.PHONY : CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.o.requires
+
+CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.o.provides: CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.o.requires
+	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.o.provides.build
+.PHONY : CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.o.provides
+
+CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.o.provides.build: CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.o
+
 # Object files for target daytimetcpsrv
 daytimetcpsrv_OBJECTS = \
 "CMakeFiles/daytimetcpsrv.dir/daytimetcp/daytimetcpsrv.c.o" \
 "CMakeFiles/daytimetcpsrv.dir/lib/error.c.o" \
 "CMakeFiles/daytimetcpsrv.dir/lib/wrapsock.c.o" \
-"CMakeFiles/daytimetcpsrv.dir/lib/wrapunix.c.o"
+"CMakeFiles/daytimetcpsrv.dir/lib/wrapunix.c.o" \
+"CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.o" \
+"CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.o"
 
 # External object files for target daytimetcpsrv
 daytimetcpsrv_EXTERNAL_OBJECTS =
@@ -155,6 +203,8 @@ daytimetcpsrv: CMakeFiles/daytimetcpsrv.dir/daytimetcp/daytimetcpsrv.c.o
 daytimetcpsrv: CMakeFiles/daytimetcpsrv.dir/lib/error.c.o
 daytimetcpsrv: CMakeFiles/daytimetcpsrv.dir/lib/wrapsock.c.o
 daytimetcpsrv: CMakeFiles/daytimetcpsrv.dir/lib/wrapunix.c.o
+daytimetcpsrv: CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.o
+daytimetcpsrv: CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.o
 daytimetcpsrv: CMakeFiles/daytimetcpsrv.dir/build.make
 daytimetcpsrv: CMakeFiles/daytimetcpsrv.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C executable daytimetcpsrv"
@@ -168,6 +218,8 @@ CMakeFiles/daytimetcpsrv.dir/requires: CMakeFiles/daytimetcpsrv.dir/daytimetcp/d
 CMakeFiles/daytimetcpsrv.dir/requires: CMakeFiles/daytimetcpsrv.dir/lib/error.c.o.requires
 CMakeFiles/daytimetcpsrv.dir/requires: CMakeFiles/daytimetcpsrv.dir/lib/wrapsock.c.o.requires
 CMakeFiles/daytimetcpsrv.dir/requires: CMakeFiles/daytimetcpsrv.dir/lib/wrapunix.c.o.requires
+CMakeFiles/daytimetcpsrv.dir/requires: CMakeFiles/daytimetcpsrv.dir/lib/str_cli.c.o.requires
+CMakeFiles/daytimetcpsrv.dir/requires: CMakeFiles/daytimetcpsrv.dir/lib/str_echo.c.o.requires
 .PHONY : CMakeFiles/daytimetcpsrv.dir/requires
 
 CMakeFiles/daytimetcpsrv.dir/clean:

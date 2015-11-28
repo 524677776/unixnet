@@ -7,6 +7,12 @@ CMakeFiles/daytimetcpcli.dir/daytimetcp/daytimetcpcli.c.o
 CMakeFiles/daytimetcpcli.dir/lib/error.c.o
  /home/gw/Documents/unixnet/lib/error.c
  /home/gw/Documents/unixnet/lib/unp.h
+CMakeFiles/daytimetcpcli.dir/lib/str_cli.c.o
+ /home/gw/Documents/unixnet/lib/str_cli.c
+ /home/gw/Documents/unixnet/lib/unp.h
+CMakeFiles/daytimetcpcli.dir/lib/str_echo.c.o
+ /home/gw/Documents/unixnet/lib/str_echo.c
+ /home/gw/Documents/unixnet/lib/unp.h
 CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.o
  /home/gw/Documents/unixnet/lib/unp.h
  /home/gw/Documents/unixnet/lib/wrapsock.c

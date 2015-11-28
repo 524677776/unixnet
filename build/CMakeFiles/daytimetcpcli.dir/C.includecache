@@ -24,7 +24,7 @@ errno.h
 
 /home/gw/Documents/unixnet/daytimetcp/daytimetcpcli.c
 unp.h
--
+/home/gw/Documents/unixnet/daytimetcp/unp.h
 
 /home/gw/Documents/unixnet/lib/error.c
 unp.h
@@ -33,6 +33,14 @@ stdarg.h
 -
 syslog.h
 -
+
+/home/gw/Documents/unixnet/lib/str_cli.c
+unp.h
+/home/gw/Documents/unixnet/lib/unp.h
+
+/home/gw/Documents/unixnet/lib/str_echo.c
+unp.h
+/home/gw/Documents/unixnet/lib/unp.h
 
 /home/gw/Documents/unixnet/lib/unp.h
 netinet/in.h

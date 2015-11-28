@@ -2,33 +2,38 @@
 * @Author: gw
 * @Date:   2015-11-21 23:16:19
 * @Last Modified by:   gw
-* @Last Modified time: 2015-11-22 01:12:19
+* @Last Modified time: 2015-11-28 12:10:49
 */
 
-#include <unp.h>
+
+#include "unp.h"
 
 int main(int argc, char const *argv[])
 {
 	int listenfd, connfd;
 	pid_t childpid;
-	socklen_t clilen;
-	struct sockaddr_in cliaddr, servaddr;
 
+	socklen_t chilen;
+	struct sockaddr_in cliaddr, servaddr;
+	
+	//create socket
 	listenfd = Socket(AF_INET, SOCK_STREAM, 0);
 
 	bzero(&servaddr, sizeof(servaddr));
-
 	servaddr.sin_family = AF_INET;
-	servaddr.sin_addr.s_addr = htol(INADDR_ANY);
+	servaddr.sin_addr.s_addr = htonl(INADDR_ANY);
 	servaddr.sin_port = htons(SERV_PORT);
 
-	Bind(listenfd, (SA *) &servaddr, sizeof(servaddr));
+	// bind
+	Bind(listenfd, (SA *)&servaddr, sizeof(servaddr));
 
+	// listen
 	Listen(listenfd, LISTENQ);
 
-	for(;;)	{
-		clilen = sizeof(cliaddr);
-		connfd = Accept(listenfd, (SA *) &cliaddr, &clilen);
+	// accept
+	for ( ; ; ){
+		chilen = sizeof(cliaddr);
+		connfd = Accept(listenfd, (SA *) &cliaddr, &chilen);
 
 		if ((childpid = Fork()) == 0){
 			Close(listenfd);

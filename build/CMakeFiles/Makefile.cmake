@@ -13,6 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.2.2/CMakeSystem.cmake"
   "CMakeFiles/feature_tests.c"
   "CMakeFiles/feature_tests.cxx"
+  "../config.h.in"
   "/usr/share/cmake-3.2/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c"
   "/usr/share/cmake-3.2/Modules/CMakeCInformation.cmake"
@@ -39,6 +40,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.2/Modules/CMakeTestCXXCompiler.cmake"
   "/usr/share/cmake-3.2/Modules/CMakeTestCompilerCommon.cmake"
   "/usr/share/cmake-3.2/Modules/CMakeUnixFindMake.cmake"
+  "/usr/share/cmake-3.2/Modules/CheckFunctionExists.c"
+  "/usr/share/cmake-3.2/Modules/CheckFunctionExists.cmake"
   "/usr/share/cmake-3.2/Modules/Compiler/ADSP-DetermineCompiler.cmake"
   "/usr/share/cmake-3.2/Modules/Compiler/AppleClang-DetermineCompiler.cmake"
   "/usr/share/cmake-3.2/Modules/Compiler/Borland-DetermineCompiler.cmake"
@@ -103,12 +106,15 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.2.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.2.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.2.2/CMakeCXXCompiler.cmake"
+  "config.h"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/tcpserv01.dir/DependInfo.cmake"
   "CMakeFiles/byteorder.dir/DependInfo.cmake"
   "CMakeFiles/daytimetcpcli.dir/DependInfo.cmake"
   "CMakeFiles/daytimetcpsrv.dir/DependInfo.cmake"
+  "CMakeFiles/tcpcli01.dir/DependInfo.cmake"
   )
