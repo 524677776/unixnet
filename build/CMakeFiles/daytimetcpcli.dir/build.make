@@ -72,16 +72,90 @@ CMakeFiles/daytimetcpcli.dir/daytimetcp/daytimetcpcli.c.o.provides: CMakeFiles/d
 
 CMakeFiles/daytimetcpcli.dir/daytimetcp/daytimetcpcli.c.o.provides.build: CMakeFiles/daytimetcpcli.dir/daytimetcp/daytimetcpcli.c.o
 
+CMakeFiles/daytimetcpcli.dir/lib/error.c.o: CMakeFiles/daytimetcpcli.dir/flags.make
+CMakeFiles/daytimetcpcli.dir/lib/error.c.o: ../lib/error.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/gw/Documents/unixnet/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/daytimetcpcli.dir/lib/error.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/daytimetcpcli.dir/lib/error.c.o   -c /home/gw/Documents/unixnet/lib/error.c
+
+CMakeFiles/daytimetcpcli.dir/lib/error.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/daytimetcpcli.dir/lib/error.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/gw/Documents/unixnet/lib/error.c > CMakeFiles/daytimetcpcli.dir/lib/error.c.i
+
+CMakeFiles/daytimetcpcli.dir/lib/error.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/daytimetcpcli.dir/lib/error.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/gw/Documents/unixnet/lib/error.c -o CMakeFiles/daytimetcpcli.dir/lib/error.c.s
+
+CMakeFiles/daytimetcpcli.dir/lib/error.c.o.requires:
+.PHONY : CMakeFiles/daytimetcpcli.dir/lib/error.c.o.requires
+
+CMakeFiles/daytimetcpcli.dir/lib/error.c.o.provides: CMakeFiles/daytimetcpcli.dir/lib/error.c.o.requires
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/error.c.o.provides.build
+.PHONY : CMakeFiles/daytimetcpcli.dir/lib/error.c.o.provides
+
+CMakeFiles/daytimetcpcli.dir/lib/error.c.o.provides.build: CMakeFiles/daytimetcpcli.dir/lib/error.c.o
+
+CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.o: CMakeFiles/daytimetcpcli.dir/flags.make
+CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.o: ../lib/wrapsock.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/gw/Documents/unixnet/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.o   -c /home/gw/Documents/unixnet/lib/wrapsock.c
+
+CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/gw/Documents/unixnet/lib/wrapsock.c > CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.i
+
+CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/gw/Documents/unixnet/lib/wrapsock.c -o CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.s
+
+CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.o.requires:
+.PHONY : CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.o.requires
+
+CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.o.provides: CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.o.requires
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.o.provides.build
+.PHONY : CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.o.provides
+
+CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.o.provides.build: CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.o
+
+CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.o: CMakeFiles/daytimetcpcli.dir/flags.make
+CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.o: ../lib/wrapunix.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/gw/Documents/unixnet/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.o   -c /home/gw/Documents/unixnet/lib/wrapunix.c
+
+CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/gw/Documents/unixnet/lib/wrapunix.c > CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.i
+
+CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/gw/Documents/unixnet/lib/wrapunix.c -o CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.s
+
+CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.o.requires:
+.PHONY : CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.o.requires
+
+CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.o.provides: CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.o.requires
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.o.provides.build
+.PHONY : CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.o.provides
+
+CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.o.provides.build: CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.o
+
 # Object files for target daytimetcpcli
 daytimetcpcli_OBJECTS = \
-"CMakeFiles/daytimetcpcli.dir/daytimetcp/daytimetcpcli.c.o"
+"CMakeFiles/daytimetcpcli.dir/daytimetcp/daytimetcpcli.c.o" \
+"CMakeFiles/daytimetcpcli.dir/lib/error.c.o" \
+"CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.o" \
+"CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.o"
 
 # External object files for target daytimetcpcli
 daytimetcpcli_EXTERNAL_OBJECTS =
 
 daytimetcpcli: CMakeFiles/daytimetcpcli.dir/daytimetcp/daytimetcpcli.c.o
+daytimetcpcli: CMakeFiles/daytimetcpcli.dir/lib/error.c.o
+daytimetcpcli: CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.o
+daytimetcpcli: CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.o
 daytimetcpcli: CMakeFiles/daytimetcpcli.dir/build.make
-daytimetcpcli: libliberror.so
 daytimetcpcli: CMakeFiles/daytimetcpcli.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C executable daytimetcpcli"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/daytimetcpcli.dir/link.txt --verbose=$(VERBOSE)
@@ -91,6 +165,9 @@ CMakeFiles/daytimetcpcli.dir/build: daytimetcpcli
 .PHONY : CMakeFiles/daytimetcpcli.dir/build
 
 CMakeFiles/daytimetcpcli.dir/requires: CMakeFiles/daytimetcpcli.dir/daytimetcp/daytimetcpcli.c.o.requires
+CMakeFiles/daytimetcpcli.dir/requires: CMakeFiles/daytimetcpcli.dir/lib/error.c.o.requires
+CMakeFiles/daytimetcpcli.dir/requires: CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.o.requires
+CMakeFiles/daytimetcpcli.dir/requires: CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.o.requires
 .PHONY : CMakeFiles/daytimetcpcli.dir/requires
 
 CMakeFiles/daytimetcpcli.dir/clean:

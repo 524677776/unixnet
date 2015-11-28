@@ -102,6 +102,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named byteorder
+
+# Build rule for target.
+byteorder: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 byteorder
+.PHONY : byteorder
+
+# fast build rule for target.
+byteorder/fast:
+	$(MAKE) -f CMakeFiles/byteorder.dir/build.make CMakeFiles/byteorder.dir/build
+.PHONY : byteorder/fast
+
+#=============================================================================
 # Target rules for targets named daytimetcpcli
 
 # Build rule for target.
@@ -127,44 +140,29 @@ daytimetcpsrv/fast:
 	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/build
 .PHONY : daytimetcpsrv/fast
 
-#=============================================================================
-# Target rules for targets named liberror
+byteorder/byteorder.o: byteorder/byteorder.c.o
+.PHONY : byteorder/byteorder.o
 
-# Build rule for target.
-liberror: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 liberror
-.PHONY : liberror
+# target to build an object file
+byteorder/byteorder.c.o:
+	$(MAKE) -f CMakeFiles/byteorder.dir/build.make CMakeFiles/byteorder.dir/byteorder/byteorder.c.o
+.PHONY : byteorder/byteorder.c.o
 
-# fast build rule for target.
-liberror/fast:
-	$(MAKE) -f CMakeFiles/liberror.dir/build.make CMakeFiles/liberror.dir/build
-.PHONY : liberror/fast
+byteorder/byteorder.i: byteorder/byteorder.c.i
+.PHONY : byteorder/byteorder.i
 
-#=============================================================================
-# Target rules for targets named libwrapsock
+# target to preprocess a source file
+byteorder/byteorder.c.i:
+	$(MAKE) -f CMakeFiles/byteorder.dir/build.make CMakeFiles/byteorder.dir/byteorder/byteorder.c.i
+.PHONY : byteorder/byteorder.c.i
 
-# Build rule for target.
-libwrapsock: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 libwrapsock
-.PHONY : libwrapsock
+byteorder/byteorder.s: byteorder/byteorder.c.s
+.PHONY : byteorder/byteorder.s
 
-# fast build rule for target.
-libwrapsock/fast:
-	$(MAKE) -f CMakeFiles/libwrapsock.dir/build.make CMakeFiles/libwrapsock.dir/build
-.PHONY : libwrapsock/fast
-
-#=============================================================================
-# Target rules for targets named libwrapunix
-
-# Build rule for target.
-libwrapunix: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 libwrapunix
-.PHONY : libwrapunix
-
-# fast build rule for target.
-libwrapunix/fast:
-	$(MAKE) -f CMakeFiles/libwrapunix.dir/build.make CMakeFiles/libwrapunix.dir/build
-.PHONY : libwrapunix/fast
+# target to generate assembly for a file
+byteorder/byteorder.c.s:
+	$(MAKE) -f CMakeFiles/byteorder.dir/build.make CMakeFiles/byteorder.dir/byteorder/byteorder.c.s
+.PHONY : byteorder/byteorder.c.s
 
 daytimetcp/daytimetcpcli.o: daytimetcp/daytimetcpcli.c.o
 .PHONY : daytimetcp/daytimetcpcli.o
@@ -219,7 +217,8 @@ lib/error.o: lib/error.c.o
 
 # target to build an object file
 lib/error.c.o:
-	$(MAKE) -f CMakeFiles/liberror.dir/build.make CMakeFiles/liberror.dir/lib/error.c.o
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/error.c.o
+	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/error.c.o
 .PHONY : lib/error.c.o
 
 lib/error.i: lib/error.c.i
@@ -227,7 +226,8 @@ lib/error.i: lib/error.c.i
 
 # target to preprocess a source file
 lib/error.c.i:
-	$(MAKE) -f CMakeFiles/liberror.dir/build.make CMakeFiles/liberror.dir/lib/error.c.i
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/error.c.i
+	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/error.c.i
 .PHONY : lib/error.c.i
 
 lib/error.s: lib/error.c.s
@@ -235,7 +235,8 @@ lib/error.s: lib/error.c.s
 
 # target to generate assembly for a file
 lib/error.c.s:
-	$(MAKE) -f CMakeFiles/liberror.dir/build.make CMakeFiles/liberror.dir/lib/error.c.s
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/error.c.s
+	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/error.c.s
 .PHONY : lib/error.c.s
 
 lib/wrapsock.o: lib/wrapsock.c.o
@@ -243,7 +244,8 @@ lib/wrapsock.o: lib/wrapsock.c.o
 
 # target to build an object file
 lib/wrapsock.c.o:
-	$(MAKE) -f CMakeFiles/libwrapsock.dir/build.make CMakeFiles/libwrapsock.dir/lib/wrapsock.c.o
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.o
+	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/wrapsock.c.o
 .PHONY : lib/wrapsock.c.o
 
 lib/wrapsock.i: lib/wrapsock.c.i
@@ -251,7 +253,8 @@ lib/wrapsock.i: lib/wrapsock.c.i
 
 # target to preprocess a source file
 lib/wrapsock.c.i:
-	$(MAKE) -f CMakeFiles/libwrapsock.dir/build.make CMakeFiles/libwrapsock.dir/lib/wrapsock.c.i
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.i
+	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/wrapsock.c.i
 .PHONY : lib/wrapsock.c.i
 
 lib/wrapsock.s: lib/wrapsock.c.s
@@ -259,7 +262,8 @@ lib/wrapsock.s: lib/wrapsock.c.s
 
 # target to generate assembly for a file
 lib/wrapsock.c.s:
-	$(MAKE) -f CMakeFiles/libwrapsock.dir/build.make CMakeFiles/libwrapsock.dir/lib/wrapsock.c.s
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/wrapsock.c.s
+	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/wrapsock.c.s
 .PHONY : lib/wrapsock.c.s
 
 lib/wrapunix.o: lib/wrapunix.c.o
@@ -267,7 +271,8 @@ lib/wrapunix.o: lib/wrapunix.c.o
 
 # target to build an object file
 lib/wrapunix.c.o:
-	$(MAKE) -f CMakeFiles/libwrapunix.dir/build.make CMakeFiles/libwrapunix.dir/lib/wrapunix.c.o
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.o
+	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/wrapunix.c.o
 .PHONY : lib/wrapunix.c.o
 
 lib/wrapunix.i: lib/wrapunix.c.i
@@ -275,7 +280,8 @@ lib/wrapunix.i: lib/wrapunix.c.i
 
 # target to preprocess a source file
 lib/wrapunix.c.i:
-	$(MAKE) -f CMakeFiles/libwrapunix.dir/build.make CMakeFiles/libwrapunix.dir/lib/wrapunix.c.i
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.i
+	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/wrapunix.c.i
 .PHONY : lib/wrapunix.c.i
 
 lib/wrapunix.s: lib/wrapunix.c.s
@@ -283,7 +289,8 @@ lib/wrapunix.s: lib/wrapunix.c.s
 
 # target to generate assembly for a file
 lib/wrapunix.c.s:
-	$(MAKE) -f CMakeFiles/libwrapunix.dir/build.make CMakeFiles/libwrapunix.dir/lib/wrapunix.c.s
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/lib/wrapunix.c.s
+	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/lib/wrapunix.c.s
 .PHONY : lib/wrapunix.c.s
 
 # Help Target
@@ -294,11 +301,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... liberror"
-	@echo "... libwrapsock"
+	@echo "... byteorder"
 	@echo "... daytimetcpcli"
-	@echo "... libwrapunix"
 	@echo "... daytimetcpsrv"
+	@echo "... byteorder/byteorder.o"
+	@echo "... byteorder/byteorder.i"
+	@echo "... byteorder/byteorder.s"
 	@echo "... daytimetcp/daytimetcpcli.o"
 	@echo "... daytimetcp/daytimetcpcli.i"
 	@echo "... daytimetcp/daytimetcpcli.s"

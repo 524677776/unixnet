@@ -2,13 +2,10 @@
 * @Author: gw
 * @Date:   2015-11-14 11:34:01
 * @Last Modified by:   gw
-* @Last Modified time: 2015-11-14 11:54:51
+* @Last Modified time: 2015-11-21 23:09:51
 */
 
 #include <unp.h>
-#include <error.h>
-#include <wrapsock.h>
-#include <wrapunix.h>
 #include <time.h>
 
 int main(int argc, char **argv)

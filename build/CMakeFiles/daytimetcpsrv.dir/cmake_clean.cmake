@@ -1,5 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/daytimetcpsrv.dir/daytimetcp/daytimetcpsrv.c.o"
+  "CMakeFiles/daytimetcpsrv.dir/lib/error.c.o"
+  "CMakeFiles/daytimetcpsrv.dir/lib/wrapsock.c.o"
+  "CMakeFiles/daytimetcpsrv.dir/lib/wrapunix.c.o"
   "daytimetcpsrv.pdb"
   "daytimetcpsrv"
 )
