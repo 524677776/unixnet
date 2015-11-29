@@ -2,7 +2,7 @@
 * @Author: gw
 * @Date:   2015-11-21 23:16:19
 * @Last Modified by:   gw
-* @Last Modified time: 2015-11-29 19:29:03
+* @Last Modified time: 2015-11-29 21:50:20
 */
 
 #include <sys/types.h> // pid_t ...
@@ -70,10 +70,6 @@ int main(int argc, char const *argv[])
 {
 	int listenfd, connfd;
 	pid_t childpid;
-
-	perror("abc");
-
-	printf("%s\n", "hello!");
 
 	socklen_t chilen;
 	struct sockaddr_in cliaddr, servaddr;
